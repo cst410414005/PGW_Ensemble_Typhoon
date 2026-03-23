@@ -48,13 +48,13 @@ Step 7: 統計視覺化 (05_Evaluation_and_Plot)
 Pangu-Weather (盤古天氣模式):
 來自華為雲 (Huawei Cloud) 團隊發表於《Nature》之研究：
 Bi, K., Xie, L., Zhang, H., Chen, X., Gu, X., & Tian, Q. (2023). Accurate medium-range global weather forecasting with 3D neural networks. Nature, 619, 533–538. https://doi.org/10.1038/s41586-023-06185-3
-GitHub Repository: 198808xc/Pangu-Weather
+GitHub Repository: https://github.com/198808xc/Pangu-Weather
 
 Pangu-Weather Inference Implementation (推論環境實作):
 本專案之盤古模式的CPU運作環境，參考並改寫自以下教學專案（基於198808xc之精簡版架構）：
-GitHub Repository: yungyun0721/AI_global_forecast_model_for_education
+GitHub Repository: https://github.com/yungyun0721/AI_global_forecast_model_for_education
 
 CyTRACK (氣旋追蹤工具):
 本專案之熱帶氣旋定位與擷取氣旋強度特徵，採用EphysLab團隊開發之Python工具箱 CyTRACK：
 Pérez-Alarcón, A., Coll-Hidalgo, P., Trigo, R. M., Nieto, R., & Gimeno, L. (2024). CyTRACK: An open-source and user-friendly python toolbox for detecting and tracking cyclones. Environmental Modelling & Software, 176, 106027. https://doi.org/10.1016/j.envsoft.2024.106027
-GitHub Repository: apalarcon/CyTRACK
+GitHub Repository: https://github.com/apalarcon/CyTRACK
