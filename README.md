@@ -3,13 +3,13 @@
 
 本專案結合數值模式製作擾動的方式與人工智慧氣象模式，建構一套適合西北太平洋熱帶氣旋系集預報模式。透過 ECMWF ERA5 再分析資料與自製隨機擾動，自動化產出32組系集成員的盤古天氣 (Pangu-Weather) 模擬，並針對西北太平洋的颱風個案進行客觀追蹤與統計視覺化分析。
 
-## 🛠️ 核心工作與使用工具 (Tech Stack)
+## 🛠️ 核心工作與主要使用工具
 * 資料工程與視覺化：Python (`xarray`, `netCDF4`, `pandas`, `matplotlib`, `cartopy`)
 * 氣旋追蹤與定位：CyTRACK
 * 氣象模式與同化：WRF (WPS, real), WRFDA (Random CV)
 * 系統環境與自動化：Linux 終端機環境, Bash Shell Scripting, GrADS
 
-## 📂 專案架構 (Repository Structure)
+## 📂 專案架構 
 
 本專案的資料夾與程式碼結構，為按照資料處理與模式運算的先後步驟進行劃分：
 
@@ -23,7 +23,7 @@ PGW_Ensemble_Typhoon/
 └── README.md
 ```
 
-## ⚙️ 系統工作流程 (Workflow)
+## ⚙️ 工作流程 
 Step 1: 下載初始場與生成擾動 (01_ERA5_and_Perturbation)
 透過API自動化下載ERA5氣壓層與地面層資料，並轉換為GrADS可讀取格式。利用WRFDA的RandomCV結合特定隨機種子(seed)，將每個初始場產出32組隨機擾動場。
 
@@ -42,7 +42,7 @@ Step 5: 計算誤差與品管 (05_Evaluation_and_Plot)
 Step 7: 統計視覺化 (05_Evaluation_and_Plot)
 執行獨立樣本t檢定(T-test)評估差異顯著性，自動繪製誤差盒鬚圖與系集路徑圖。
 
-## 📖 致謝與引用 (Acknowledgements & References)
+## 📖 致謝與引用 
 **本專案致力於資料前處理、結合擾動與再分析資料、批次進行盤古系集與統計視覺化，盤古模式與Cytrack均受惠於學術界的卓越貢獻**
 
 Pangu-Weather (盤古天氣模式):
