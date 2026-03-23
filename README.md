@@ -4,14 +4,14 @@
 本專案結合數值模式製作擾動的方式與人工智慧氣象模式，建構一套適合西北太平洋熱帶氣旋系集預報模式。
 
 ## 🛠️ 核心工作與主要使用工具
-* 資料工程與視覺化：Python (`xarray`, `netCDF4`, `pandas`, `matplotlib`, `cartopy`)
+* 資料處理與視覺化：Python (`xarray`, `netCDF4`, `pandas`, `matplotlib`, `cartopy`)
 * 氣旋追蹤與定位：CyTRACK
 * 氣象模式與同化：WRF (WPS, real), WRFDA (Random CV)
 * 系統環境與自動化：Linux 終端機環境, Bash Shell Scripting, GrADS
 
 ## 📂 專案架構 
 
-本專案的資料夾與程式碼結構，為按照資料處理與模式運算的先後步驟進行劃分：
+本專案的資料夾與程式碼結構按照工作流程步驟進行劃分：
 
 ```text
 PGW_Ensemble_Typhoon/
