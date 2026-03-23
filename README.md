@@ -21,7 +21,7 @@ PGW_Ensemble_Typhoon/
 ├── 04_CyTRACK_Analysis/        # CyTRACK 客觀氣旋追蹤與特徵擷取 (.py)
 ├── 05_Evaluation_and_Plot/     # 誤差對齊、統計檢定與視覺化圖表產出 (.sh, .py, .gs)
 └── README.md
-```text
+```
 
 ## ⚙️ 系統工作流程 (Workflow)
 Step 1: 下載初始場與生成擾動 (01_ERA5_and_Perturbation)
@@ -43,7 +43,7 @@ Step 7: 統計視覺化 (05_Evaluation_and_Plot)
 執行獨立樣本t檢定(T-test)評估差異顯著性，自動繪製誤差盒鬚圖與系集路徑圖。
 
 ## 📖 致謝與引用 (Acknowledgements & References)
-本專案致力於資料前處理、批次進行盤古系集與統計視覺化，AI氣象模式與追蹤演算法均受惠於學術界的卓越貢獻
+**本專案致力於資料前處理、結合擾動與再分析資料、批次進行盤古系集與統計視覺化，盤古模式與Cytrack均受惠於學術界的卓越貢獻**
 
 Pangu-Weather (盤古天氣模式):
 來自華為雲 (Huawei Cloud) 團隊發表於《Nature》之研究：
