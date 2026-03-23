@@ -1,5 +1,5 @@
 # 🌀 PGW_Ensemble_Typhoon
-**盤古天氣模型之熱帶氣旋系集預報系統 (Ensemble Forecasting System for Tropical Cyclones based on Pangu-Weather)**
+**盤古天氣模型之熱帶氣旋系集預報系統 (Ensemble Forecasting for Tropical Cyclones based on Pangu-Weather)**
 
 本專案結合數值模式製作擾動的方式與人工智慧氣象模式，建構一套適合西北太平洋熱帶氣旋系集預報模式。透過 ECMWF ERA5 再分析資料與自製隨機擾動，自動化產出32組系集成員的盤古天氣 (Pangu-Weather) 模擬，並針對西北太平洋的颱風個案進行客觀追蹤與統計視覺化分析。
 
