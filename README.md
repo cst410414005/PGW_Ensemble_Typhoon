@@ -24,19 +24,19 @@ PGW_Ensemble_Typhoon/
 ```
 
 ## ⚙️ 工作流程 
-Step 1: 下載初始場與生成擾動 (01_ERA5_and_Perturbation)
+Step 1: 下載初始場與生成擾動 (01_ERA5_and_Perturbation)  
 透過API自動化下載ERA5氣壓層與地面層資料，並轉換為GrADS可讀取格式。利用WRFDA的RandomCV結合特定隨機種子(seed)，將每個初始場產出32組隨機擾動場。
 
-Step 2: 合成系集成員初始場 (02_IC_Synthesis)
+Step 2: 合成系集成員初始場 (02_IC_Synthesis)  
 擷取1/4地球的擾動範圍疊加至ERA5再分析環境場，則為提供給盤古模式進行預報所需之初始檔。
 
-Step 3: 運作盤古模式 (03_Pangu_Simulation)
+Step 3: 運作盤古模式 (03_Pangu_Simulation)  
 執行跨架構資料轉換 (.bin to .npy)，於獨立環境中執行Pangu-Weather CPU模式，批次產出32個系集成員的120小時之預報。
 
-Step 4: 追蹤氣旋 (04_CyTRACK_Analysis)
+Step 4: 追蹤氣旋 (04_CyTRACK_Analysis)  
 轉換網格資料為NetCDF4格式，運用CyTRACK演算法與濾波，鎖定並擷取各系集成員之軌跡及氣旋詳細數據。
 
-Step 5: 計算誤差與統計視覺化 (05_Evaluation_and_Plot)
+Step 5: 計算誤差與統計視覺化 (05_Evaluation_and_Plot)  
 對齊資料與觀測之時間序列，並過濾極端離群值，以量化路徑與強度(MSLP/最大風速)誤差。執行獨立樣本t檢定(T-test)評估差異顯著性，自動繪製誤差盒鬚圖與系集路徑圖。
 
 ## 📖 致謝與引用 
