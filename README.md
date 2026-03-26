@@ -39,7 +39,7 @@ Step 4: 追蹤氣旋 (04_CyTRACK_Analysis)
 Step 5: 計算誤差與品管 (05_Evaluation_and_Plot)
 對齊資料與觀測之時間序列，並過濾極端離群值，以量化路徑與強度(MSLP/最大風速)誤差。
 
-Step 7: 統計視覺化 (05_Evaluation_and_Plot)
+Step 6: 統計視覺化 (05_Evaluation_and_Plot)
 執行獨立樣本t檢定(T-test)評估差異顯著性，自動繪製誤差盒鬚圖與系集路徑圖。
 
 ## 📖 致謝與引用 
